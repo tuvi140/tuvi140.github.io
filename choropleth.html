@@ -115,7 +115,7 @@ This was the first map I created, which was learning an entire skill. I had done
 		// change class breaks and color depending on your values //UPDATE for our own legend - use colorbrewer.org for ideas for colors
 		//UPDATE legend to match the classes you coded - and the source of your data needs to reference the correct link
 	info.update = function (props) {
-		const contents = props ? `<b>${props.NAME_LONG}</b><br />${props.biodiv_t13} % of protected KBAs` : 'Hover over a state';
+		const contents = props ? `<b>${props.lbl_en}</b><br />${props.biodiv_t13} % of protected KBAs` : 'Hover over a state';
 		this._div.innerHTML = `<h4>15.1.2 Key Biodiversity Areas in protected terrestrial areas</h4>${contents}`;
 	};
 
