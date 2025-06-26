@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Britta Ricker</title>
+		<title>Daniella Mires</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,7 +22,7 @@
 
 							<!-- Logo -->
 								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Britta Ricker</span>
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Daniella Mires</span>
 								</a>
 
 							<!-- Nav -->
@@ -53,35 +53,33 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Digital Elevation Models</h1>
-							<span class="image main"><img src="images/dsmdtm.png" alt="" /></span>
+							<h1>Land Use Classification</h1>
+				
+						
 														<p>
-															<strong>Digital elevation models<strong> contain elevation information; where each cell contains a real value representing elevation. Modern DEMs are often derived from Light Detection and Ranging (LiDAR) data, which captures high-resolution spatial information by sending out LASER pulses and calculating their return times. <br/> 
-<br/>
-<strong>Digital Terrain Models (DTM):</strong>provide elevation data from the bare ground only, effectively removing features like trees and buildings.<br/> 
-<br/>
-<strong>Digital Surface Models (DSM):</strong>These include all features on the Earth's surface, such as the tops of trees, buildings, and other structures.
+											To map out the different land classifications in the Area of Utrecht, I used data from the satellite <strong>Sentinel-2<strong>, which contains a series of two Earth observation satellites of the European Space Agency (ESA) and is part of the Copernicus programme. This satellite focuses on providing vegetation information, depending on the wave signal they receive back<br/><br/>
+</br>
 
 														</p>
 
-
-							<span class="image main"><img src="images/old_map.png" alt="" /></span>
+	<span class="image main"><img src="images/landuse.png" alt="" /></span>
+							<span class="image main"><img src="images/legend_landuse" alt="" /></span>
 														<p>
-															I mapped the area between the Zuid-Holland / Noord-Brabant border called the <strong>National Park De Biesbosch<strong>. Particularly since I had heard of the place through Dutch friends, and the waterways looked interesting to me. I wanted to see how much they changed over time. <br/>
- <br/>
-I found a map from 1869 titled (translated)<em> “General plan of the Bergsche Veld with indication of the Nieuwe Merwede and the works carried out to form it up to the end of 1869”</em>. This map was commissioned by the State,  established by Royal Decree of 13 February 1869, secretary of Opstal.<br/>
- <br/>
-I learned: 
+										
+I ended up creating an unsupervised pixel-based map. 
 <ul>
-  <li>Manipulating DSM/DTM maps</li>
-  <li>Correlating two different maps and coordinating them together</li>
-  <li>Clipping into a polygram</li>
-  <li>Exporting with full layout</li>
-</ul>
+  <li>Unsupervised= The software identifies natural groupings (clusters) in the data using algorithms like K-means or ISODATA.
+</li>
+  <li>Pixel-based=Classification is performed at the individual pixel level, using the pixel’s spectral values (e.g., reflectance in different bands like red, green, near-infrared, etc.).</li>
+<ul>
+ </br></br>
+
+This type of map showed the distinction between the water ways and dying vegetaion (as I compared in Google Maps) more clearly. Still, I suppose because of moisture levels and different species, the legend ended up not being the most accurate. 
+
+
 														</p>
 
-		<span class="image main"><img src="images/dsmcomp.png" alt="" /></span>
-		<span class="image main"><img src="images/dtmcomp.png" alt="" /></span>														
+													
 					<p>
 						
 						</p>
@@ -89,24 +87,7 @@ I learned:
 						</div>
 					</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							
-							<section>
-								<h2>Follow</h2>
-								<ul class="icons">
-									
-									<li><a href="https://github.com/bricker0" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.linkedin.com/in/brittaricker/" class="icon brands style2 fa-linkedin"><span class="label">500px</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; Britta Ricker. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+				
 
 			</div>
 
